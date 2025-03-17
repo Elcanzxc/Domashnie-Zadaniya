@@ -27,4 +27,7 @@ public:
     void setY(const int Y);
     void setZ(const int Z);
 
+
+    void Save(const char* file);
+    void Load(const char* file);
 };

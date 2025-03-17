@@ -25,3 +25,30 @@ int XYZ::getZ() { return z; }
 void XYZ::setX(const int X) { x = X; }
 void XYZ::setY(const int Y) { y = Y; }
 void XYZ::setZ(const int Z) { z = Z; }
+
+
+void XYZ::Save(const char* file) {
+    FILE* my_file;
+    fopen_s(&my_file, file, "w");
+    if (my_file != nullptr) {
+        fprintf(my_file, "%d %d %d\n", x, y, z);
+        fclose(my_file);
+        cout << "Soxranil: " << file << endl;
+    } else {
+        cout << "Ne udalos soxranit fayl: " << file << endl;
+    }
+}
+
+
+void XYZ::Load(const char* file) {
+    FILE* my_file;
+    fopen_s(&my_file, file, "r");
+    if (my_file != nullptr) {
+        fscanf_s(my_file, "%d %d %d", &x, &y, &z);
+        fclose(my_file);
+        cout << "Zaqruzil:  " << file << endl;
+    }
+    else {
+        cout << "Ne udalos otkryt fayl: " << file << endl;
+    }
+}
