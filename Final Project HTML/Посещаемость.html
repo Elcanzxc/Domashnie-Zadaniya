@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Посещаемость</title>
+    <link rel="stylesheet" href="ПосещаемостьCss.css">
+
+</head>
+
+
+
+
+<body>
+    <header>
+        <h1>LOGBOOK</h1>
+        <div>
+            <div class="icon">
+                <span   class="iconN" style="background-image: url('Location.png');">  Baku </span>
+
+                 <span   class="iconN" style="background-image: url('Language.png');">  English </span>
+                 
+                 <span   class="iconN" style="background-image: url('Notification.png');"> | </span>
+
+                 <span   class="iconN" style="background-image: url('User.png');">  | </span>
+            </div>
+            <div class="icon"><i class="fas fa-bell"></i></div>
+            <div class="icon"><i class="fas fa-user"></i></div>
+    </header>
+    
+    <div class="container">
+
+        <div class="sidebar">
+            <ul>
+                <li class="iconM" style="background-image: url('Message.png');">
+                    <span class="iconText">Сообщения</span>
+                </li>
+                <li class="iconM" style="background-image: url('Raspisanie.png');">
+                    <span class="iconText">Расписание</span>
+                </li>
+                <a href="Посещаемость.html"><li class="iconM" style="background-image: url('Posesaemost.png');">
+                    <span class="iconText">Посещаемость</span>
+                </li> </a>
+                <a href="Студенты.html"> <li class="iconM" style="background-image: url('Student.png');">
+                    <span class="iconText">Студенты</span>
+                </li></a>
+                <a href="Домашние задания.html">  <li class="iconM" style="background-image: url('Dz.png');">
+                    <span class="iconText">Домашние задания</span>
+                </li></a>
+                <li class="iconM" style="background-image: url('Ekzamen.png');">
+                    <span class="iconText">Экзамены</span>
+                </li>
+            </ul>
+        </div>
+        
+        
+        <main>
+            <div class="attendance-yeri">
+                <span class="attendance">Attendance</span>
+                <span class="drugoy-attendance">Group attendance</span>
+            </div>
+            <h2>6 March, Thursday</h2>
+            
+            <div class="vaxt">
+                <div class="time white">15:00 - 16:20</div>
+                <div class="time blue">16:30 - 17:50</div>
+                <div class="time blue">19:00 - 20:20</div>
+                <div class="time blue">20:30 - 21:50</div>
+            </div>
+            
+            <div class="melumat-yeri">
+                <p>Specialization: Программирование с использованием языка C++ (УП 10.0.0)</p>
+                <label><input type="radio" name="teacher" checked> Main teacher</label>
+                <label><input type="radio" name="teacher"> Substitute teacher</label>
+            </div>
+            
+            <div class="melumat-yeri">
+                <p>Group: FSDA_OCT_24_5_az</p>
+                <p>Topic of the session</p>
+                <button class="knopka">Add materials</button>
+            </div>
+
+            <table>
+             
+                    <tr>
+                        <th>№</th>
+                        <th>Студент</th>
+                        <th>Was in MyStat</th>
+                        <th>Present</th>
+                        <th>Present Online</th>
+                        <th>Control Work</th>
+                        <th>Classwork</th>
+                        <th>Comment</th>
+                    </tr>
+              
+               
+                    <tr>
+                        <td>1</td>
+                        <td class="iconU" style="background-image: url('User.png');">Elçin Teymur oğlu Həsənov</td>
+                        <td>10/28/2024</td>
+                        <td>
+                            <label><input type="radio" name="present1"> </label>
+                            <label><input type="radio" name="present1"> </label>
+                            <label><input type="radio" name="present1"> </label>
+                        </td>
+                        <td></td>
+                        <td>
+                            <select>
+                                <option value="">-</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="">-</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </td>
+                        <td><input type="text" placeholder="Comment"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="iconU" style="background-image: url('User.png');">Samir Fuad oğlu Əliyev</td>
+                        <td>11/15/2024</td>
+                        <td>
+                            <label><input type="radio" name="present2"> </label>
+                            <label><input type="radio" name="present2"> </label>
+                            <label><input type="radio" name="present2"> </label>
+                        </td>
+                        <td></td>
+                        <td>
+                            <select>
+                                <option value="">-</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="">-</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </td>
+                        <td><input type="text" placeholder="Comment"></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="iconU" style="background-image: url('User.png');">Nigar Elşad qızı Məmmədova</td>
+                        <td>12/01/2024</td>
+                        <td>
+                            <label><input type="radio" name="present3"></label>
+                            <label><input type="radio" name="present3"> </label>
+                            <label><input type="radio" name="present3"></label>
+                        </td>
+                        <td></td>
+                        <td>
+                            <select>
+                                <option value="">-</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="">-</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </td>
+                        <td><input type="text" placeholder="Comment"></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td class="iconU" style="background-image: url('User.png');">Tural Ramiz oğlu Quliyev</td>
+                        <td>01/09/2025</td>
+                        <td>
+                            <label><input type="radio" name="present4"> </label>
+                            <label><input type="radio" name="present4"> </label>
+                            <label><input type="radio" name="present4"> </label>
+                        </td>
+                        <td></td>
+                        <td>
+                            <select>
+                                <option value="">-</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="">-</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </td>
+                        <td><input type="text" placeholder="Comment"></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td class="iconU" style="background-image: url('User.png');">Aysel İsmayıl qızı Həsənova</td>
+                        <td>10/17/2024</td>
+                        <td>
+                            <label><input type="radio" name="present5"> </label>
+                            <label><input type="radio" name="present5"> </label>
+                            <label><input type="radio" name="present5"> </label>
+                        </td>
+                        <td></td>
+                        <td>
+                            <select>
+                                <option value="">-</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="">-</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </td>
+                        <td><input type="text" placeholder="Comment"></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td class="iconU" style="background-image: url('User.png');">Faridə Rəşad qızı Qurbanova</td>
+                        <td>10/30/2024</td>
+                        <td>
+                            <label><input type="radio" name="present6"> </label>
+                            <label><input type="radio" name="present6"> </label>
+                            <label><input type="radio" name="present6"> </label>
+                        </td>
+                        <td></td>
+                        <td>
+                            <select>
+                                <option value="">-</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="">-</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </td>
+                        <td><input type="text" placeholder="Comment"></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td class="iconU" style="background-image: url('User.png');">Məryəm Əli qızı Zeynalova</td>
+                        <td>09/21/2024</td>
+                        <td>
+                            <label><input type="radio" name="present7"> </label>
+                            <label><input type="radio" name="present7"> </label>
+                            <label><input type="radio" name="present7"> </label>
+                        </td>
+                        <td></td>
+                        <td>
+                            <select>
+                                <option value="">-</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="">-</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </td>
+                        <td><input type="text" placeholder="Comment"></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td class="iconU" style="background-image: url('User.png');">Ağacan Məmməd oğlu Həsənov</td>
+                        <td>01/12/2025</td>
+                        <td>
+                            <label><input type="radio" name="present8"> </label>
+                            <label><input type="radio" name="present8"> </label>
+                            <label><input type="radio" name="present8"> </label>
+                        </td>
+                        <td></td>
+                        <td>
+                            <select>
+                                <option value="">-</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="">-</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </td>
+                        <td><input type="text" placeholder="Comment"></td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td class="iconU" style="background-image: url('User.png');">Ramil Məhəmməd oğlu Əliyev</td>
+                        <td>01/22/2025</td>
+                        <td>
+                            <label><input type="radio" name="present9"> </label>
+                            <label><input type="radio" name="present9"> </label>
+                            <label><input type="radio" name="present9"> </label>
+                        </td>
+                        <td></td>
+                        <td>
+                            <select>
+                                <option value="">-</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="">-</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </td>
+                        <td><input type="text" placeholder="Comment"></td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td class="iconU" style="background-image: url('User.png');">Fəridə Ayxan qızı Abdullayeva</td>
+                        <td>02/05/2025</td>
+                        <td>
+                            <label><input type="radio" name="present10"> </label>
+                            <label><input type="radio" name="present10"></label>
+                            <label><input type="radio" name="present10"> </label>
+                        </td>
+                        <td></td>
+                        <td>
+                            <select>
+                                <option value="">-</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="">-</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </td>
+                        <td><input type="text" placeholder="Comment"></td>
+                    </tr>
+               
+            </table>
+            
+            
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Студенты</title>
+    <link rel="stylesheet" href="Домашние задания.css">
+
+</head>
+
+
+
+
+<body>
+    <header>
+        <h1>LOGBOOK</h1>
+        <div>
+            <div class="icon">
+                <span   class="iconN" style="background-image: url('Location.png');">  Baku </span>
+
+                 <span   class="iconN" style="background-image: url('Language.png');">  English </span>
+                 
+                 <span   class="iconN" style="background-image: url('Notification.png');"> | </span>
+
+                 <span   class="iconN" style="background-image: url('User.png');">  | </span>
+            </div>
+            <div class="icon"><i class="fas fa-bell"></i></div>
+            <div class="icon"><i class="fas fa-user"></i></div>
+    </header>
+    
+    <div class="container">
+
+        <div class="sidebar">
+            <ul>
+                <li class="iconM" style="background-image: url('Message.png');">
+                    <span class="iconText">Сообщения</span>
+                </li>
+                <li class="iconM" style="background-image: url('Raspisanie.png');">
+                    <span class="iconText">Расписание</span>
+                </li>
+                <a href="Посещаемость.html"><li class="iconM" style="background-image: url('Posesaemost.png');">
+                    <span class="iconText">Посещаемость</span>
+                </li> </a>
+                <a href="Студенты.html"> <li class="iconM" style="background-image: url('Student.png');">
+                    <span class="iconText">Студенты</span>
+                </li></a>
+                <a href="Домашние задания.html">  <li class="iconM" style="background-image: url('Dz.png');">
+                    <span class="iconText">Домашние задания</span>
+                </li></a>
+                <li class="iconM" style="background-image: url('Ekzamen.png');">
+                    <span class="iconText">Экзамены</span>
+                </li>
+            </ul>
+        </div>
+        
+        
+        <main>
+
+            
+            <div class="attendance-yeri">
+                <span class="attendance">Attendance</span>
+                <span class="drugoy-attendance">Group attendance</span>
+            </div>
+
+
+            <div class="filters">
+                <div>
+                    <input type="radio" name="status" checked> Completed
+                    <input type="radio" name="status"> Under review
+                    <input type="radio" name="status"> For execution
+                    <input type="radio" name="status"> Overdue
+                    <input type="radio" name="status"> Retake
+                </div>
+                <div>
+                    <select>
+                        <option>FSDE_Oct_24_8_ru</option>
+                        <option>FSDM_1_24_4_az_CPP_OOP</option>
+                        <option>FSDA_Oct_24_5_az</option>
+                        <option>FSDM_1_24_4_az </option>
+                    </select>
+                    <select>
+                        <option>Python Core (YI 10.0.0)</option>
+                        <option>Java</option>
+                        <option>C++</option>
+                        <option>Sql</option>
+                    </select>
+                    <input  type="date" value="2025-03-03" class="date" >
+                    <select>
+                        <option>Homework Assignments</option>
+                        <option>Хз что тут писать</option>
+                    </select>
+                    <input type="checkbox"> Show transferred students
+                    <input type="checkbox"> Show all groups
+                </div>
+            </div>
+
+         <table>
+        <thead>
+            <tr>
+                <th>Student</th>
+                <th>11/7/2024 📥 🗑</th>
+                <th>11/5/2024 📥 🗑</th>
+                <th>10/31/2024 📥 🗑</th>
+                <th>10/29/2024 📥 🗑</th>
+            </tr>
+        </thead>
+        <tbody>
+
+          <tr>
+            <td>Dadaşov Roman </td>
+            <td>
+                <select class="BlueSelect">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8" selected>8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+            </td>
+            <td>
+                <select class="YellowSelect">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8" selected>8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+            </td>
+            <td>
+                <select class="YellowSelect">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12" selected>12</option>
+                </select>
+            </td>
+            <td>
+                <select class="BlueSelect">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12" selected>12</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Əfqari Hüseyn </td>
+            <td>
+                <select class="YellowSelect">
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+            </td>
+            <td>
+                <select class="BlueSelect">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8" selected>8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+            </td>
+            <td>
+                <select class="BlueSelect">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11" selected>11</option>
+                    <option value="12" >12</option>
+                </select>
+            </td>
+            <td>
+                <select class="BlueSelect">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12" selected>12</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Əliyev Rza </td>
+            <td>
+                <select class="BlueSelect">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12"  selected>12</option>
+                </select>
+            </td>
+            <td>
+                <select class="BlueSelect">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8" >8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12" selected>12</option>
+                </select>
+            </td>
+            <td>
+                <select class="BlueSelect">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11" >11</option>
+                    <option value="12"selected >12</option>
+                </select>
+            </td>
+            <td>
+                <select class="BlueSelect">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12" selected>12</option>
+                </select>
+            </td>
+        </tr>
+
+            <tr><td>Hacıyev Emil </td> <td><span class="blue">1</span></td> <td><span class="blue">7</span></td> <td><span class="blue">12</span></td> <td><span class="blue">12</span></td></tr>
+            <tr><td>Həsənli Firudin </td> <td><span class="blue">12</span></td> <td><span class="blue">12</span></td> <td><span class="blue">7</span></td> <td><span class="blue">12</span></td></tr>
+            <tr><td>Hüseynzadə İbadulla </td> <td><span class="blue">10</span></td> <td><span class="yellow">10</span></td> <td><span class="blue">8</span></td> <td><span class="blue">12</span></td></tr>
+            <tr><td>Hüseynzadə Sülfiye </td> <td><span class="blue">9</span></td> <td><span class="blue">12</span></td> <td><span class="blue">12</span></td> <td><span class="blue">12</span></td></tr>
+            <tr><td>Kəmalzadə Təranə </td> <td><span class="yellow">9</span></td> <td><span class="blue">12</span></td> <td><span class="blue">12</span></td> <td><span class="blue">12</span></td></tr>
+            <tr><td>Mehtiyev İslam </td> <td class="editable"><span>✎</span></td> <td class="editable"><span>✎</span></td> <td><span class="blue">12</span></td> <td><span class="blue">12</span></td></tr>
+        </tbody>
+        
+    </table>
+            
+            
+            
+        </main>
+    </div>
+</body>
+</html>
