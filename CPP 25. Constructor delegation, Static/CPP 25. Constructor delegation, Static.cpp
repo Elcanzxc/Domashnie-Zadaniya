@@ -1,8 +1,6 @@
 ﻿#include <iostream>
 using namespace std;
-
 // Всё в одном файле
-
 class String {
 private:
     char* stroka;
@@ -10,21 +8,17 @@ private:
     static int num;
 
 public:
-    
-    String() : length(80) {
-        stroka = new char[length + 1];
-        num++;
-    }
+
+    String() : String(80) {}
 
     String(int size) : length(size) {
         stroka = new char[length + 1];
         num++;
     }
 
-    String(const char* str) {
-        length = strlen(str);
+    String(const char* str) : length(strlen(str)) {
         stroka = new char[length + 1];
-        strcpy_s(stroka ,length+1,str);
+        strcpy_s(stroka, length + 1, str);
         num++;
     }
 
@@ -32,14 +26,14 @@ public:
         delete[] stroka;
         num--;
     }
-   
+
     void input() {
         cout << "Vvedi Stroku: ";
         cin.getline(stroka, length + 1);
     }
 
     void output() const {
-        cout << "Stroka: " << stroka << std::endl;
+        cout << "Stroka: " << stroka << endl;
     }
 
     static int getNum() {
@@ -47,20 +41,18 @@ public:
     }
 };
 
-
 int String::num = 0;
 
 int main() {
-   
     String str1;
     str1.input();
-	str1.output();
+    str1.output();
 
     String str2(41);
 
-    String str3{ "Salam Aleykum" };
-	str3.output();
+    String str3("Salam Aleykum");
+    str3.output();
 
-	cout << String::getNum() << endl;
+    cout << "Number: " << String::getNum() << endl;
     return 0;
 }
